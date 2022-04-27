@@ -1,0 +1,13 @@
+<p appBorder>posts works!</p>
+
+<input type="text" #inputref />
+<button (click)="showRef(inputref.value)">click</button>
+<ng-content></ng-content>
+<!-- <div *ngIf="posts$ | async as posts">
+  <a [routerLink]="['/posts', post.id]" *ngFor="let post of posts">
+    <div *appUnless="post.userId % 2 === 0">
+      {{ post.title | json }}
+    </div>
+  </a>
+</div> -->
+<router-outlet></router-outlet>
